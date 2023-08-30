@@ -32,8 +32,33 @@
 
 1. Create a new branch: `git checkout -b terminal_cheat_sheet`
 2. Go to [this](https://terminalcheatsheet.com/) website.
-3. Using visual studio code, create a new text named: terminal_cheat_sheet.txt
+3. Using visual studio code, create a new text file named: terminal_cheat_sheet.txt
 4. Copy paste the cheat sheet into your newly created file.
 5. Add you cheet sheet to the staging area: `git add terminal_cheat_sheet.txt`
 6. Commit changes: `git commit -m "add terminal cheat sheet"`
-7. Push changes to the remote repo: `git push origin master`
+7. Push changes to the remote repo: `git push origin terminal_cheat_sheet`
+8. Go to github to your repository page.
+9. Click on the green "Compare & pull request" button.
+10. Write a description for your pull request.
+11. Click on the green button "Create pull request"
+12. Click on the green button "Merge pull request"
+13. Click on the green button "Confirm merge"
+14. **Congrats!** You have merged your first pull request!!!!
+
+# Update local repo from remote
+1. Checkout the master branch: `git checkout master`
+2. Pull the changes made on the remote master branch: `git pull origin master`
+
+# Create python project
+1. Navigate to you projects directory(use the cheat sheet if you forgot how)
+2. Make sure you are on the master branch: `git status`
+3. Create a new branch called "hello_world"
+4. Create a new python project using poetry: `poetry new hello_world`
+5. Navigate to the newly created python project.
+6. Activate the virtual environment: `poetry shell`
+7. Add pandas as a dependency in your activated virtual environment: `poetry add pandas`
+8. Open vs code: `code .`
+9. In the \__init__.py under the hello_world folder, create your first python script that transforms a dictionary to a pandas dataframe and print the dataframe. The dictionary's keys are the column names and the key values are a list of values. The dictionary can look as follows: ```data_dict = {"fruit": ["apple" "banana", "orange"], "color": ["red", "yellow", "orange"]}```.
+10. Push your changes to the remote repo and merge your changes to the master branch.
+11. Update your local master branch with the remote master branch.
+12. Congratulation! You have created you first python package!
