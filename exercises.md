@@ -25,5 +25,15 @@
 5. Clone the remote repo to local filesystem: `git clone <your hhtps path>`
 6. You will be promted to fill in your github username.
 7. When prompted to fill in your password, fill in your newly created access token.
+8. Navigate to your new project: `cd <name>_mnemonic`
+9. Open visual studio code: `code .`
 
 # Create terminal cheat sheet
+
+1. Create a new branch: `git checkout -b terminal_cheat_sheet`
+2. Go to [this](https://terminalcheatsheet.com/) website.
+3. Using visual studio code, create a new text named: terminal_cheat_sheet.txt
+4. Copy paste the cheat sheet into your newly created file.
+5. Add you cheet sheet to the staging area: `git add terminal_cheat_sheet.txt`
+6. Commit changes: `git commit -m "add terminal cheat sheet"`
+7. Push changes to the remote repo: `git push origin master`
